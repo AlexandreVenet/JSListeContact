@@ -1,0 +1,133 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    padding: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+}
+
+h1
+{
+    margin-bottom: 0.7em;
+}
+
+table
+{
+    border-collapse: collapse;
+    border: 1px solid gray;
+    width: 100%;
+    text-align: center;
+}
+caption
+{
+    text-align: center;
+    padding:0.5em;
+    background-color: gainsboro;
+}
+th, td
+{
+    padding:0.5em;
+}
+th
+{
+    background-color: dimgrey;
+    color:white;
+}
+th, td
+{
+    border:1px solid gray;
+}
+
+form
+{
+    margin-top: 1em;
+    border:1px solid gainsboro;
+    border-radius: 0.4em;
+    padding:1em;
+}
+form fieldset legend
+{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+form fieldset > div
+{
+    padding: 0.3em 0;
+}
+form fieldset > div:last-of-type
+{
+    padding-bottom:0;
+}
+.titre label
+{
+    margin-right: 1em;
+}
+.titre label, .titre input
+{
+    cursor: pointer;
+}
+.nomPrenom, .dateTelCourriel, .submitZone
+{
+    display: flex;
+}
+input[type=text], input[type=date], input[type=tel], input[type=email], input[type=submit], input[type=reset]
+{
+    border:2px solid rgb(143,143,157);
+    border-radius: 0.4em;
+    flex-basis: 100%;
+    padding: 0.5em;
+    margin-right: 0.5em;
+    font-size: 0.9em;
+}
+input:last-of-type
+{
+    margin-right: 0;
+}
+input[type=submit]
+{
+    /* width: 100%; */
+    border:0;
+    background-color: darkcyan;
+    color:white;
+    font-weight: bold;
+    cursor: pointer;
+}
+input[type=submit].submitModifier
+{
+    background-color: darkorange;
+}
+input[type=reset]
+{
+    border:0;
+    background-color: gainsboro;
+    cursor: pointer;
+}
+
+.modifier, .supprimer
+{
+    padding: 0.5em;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: dimgrey;
+    color:white;
+    border-radius: 0.4em;
+}
+.modifier
+{
+    background-color: darkorange;
+}
+.supprimer
+{
+    background-color: darkred;
+}

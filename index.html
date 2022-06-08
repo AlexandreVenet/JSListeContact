@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP - Liste de contacts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>TP - Liste de contacts</h1>
+
+    <table>
+        <caption>Liste de contacts</caption>
+        <!-- en-tête -->
+        <thead>
+            <th>Titre</th>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Date naissance</th>
+            <th>Téléphone</th>
+            <th>Courriel</th>
+            <th>Actions</th>
+        </thead>
+        <tbody id="tableau">
+
+        </tbody>
+        <!-- Lignes -->
+        <!-- <tr>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td><button class="modifier">M</button> <button class="supprimer">X</button></td>
+        </tr> -->
+    </table>
+
+    <form action="">
+        <fieldset>
+            <legend>Ajouter contact</legend>
+            <div class="titre">
+                <label>
+                    <input type="radio" value="Mme" name="genre">
+                    <span>Mme</span>
+                </label>
+                <label>
+                    <input type="radio" value="Mlle" name="genre">
+                    <span>Mlle</span>
+                </label>
+                <label>
+                    <input type="radio" value="M." name="genre">
+                    <span>M.</span>
+                </label>
+                <label>
+                    <input type="radio" value="2SLGBTQ+" name="genre">
+                    <span>2SLGBTQ+</span>
+                </label>
+                <label>
+                    <input type="radio" value="Ne se prononce pas" name="genre" checked="">
+                    <span>Ne se prononce pas</span>
+                </label>
+            </div>
+            <div class="nomPrenom">
+                <input type="text" name="Nom" placeholder="Nom">
+                <input type="text" name="Prenom" placeholder="Prénom">
+            </div>
+            <div class="dateTelCourriel">
+                <input type="date" name="Date">
+                <input type="tel" name="Telephone" placeholder="Téléphone">
+                <input type="email" name="Courriel" placeholder="Courriel">
+            </div>
+            <div class="submitZone">
+                <input type="submit" value="Ajouter">
+                <input type="reset" value="Annuler">
+            </div>
+        </fieldset>
+    </form>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
